@@ -1,0 +1,14 @@
+apiVersion: kirkapis.qiniu.com/v1alpha1
+kind: AppMonitor
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  release: {{ .Release.Name }}
+  service: {{ .Release.Name }}
+  path: "/"
+  port: 80
+  interval: "15s"
+  portal:
+    service: {{ .Release.Name }}
+    port: 80
+    path: "/"

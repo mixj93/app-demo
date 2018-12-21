@@ -1,0 +1,23 @@
+{
+	"valueJsonSchema": {
+		"$schema": "http://json-schema.org/schema#",
+		"type": "object",
+		"required": ["image"],
+		"properties": {
+			"image": {
+        "type": "string",
+        "title": "镜像",
+        "default": "reg.qiniu.com/library/nginx:1.13.5-alpine",
+        "description": ""
+      },
+      "message": {
+        "type": "string",
+        "title": "消息",
+        "description": ""
+      }
+		}
+	},
+	"valueUiSchema": {},
+	"detailJsonSchema": {},
+	"detailUiSchema": {}
+}

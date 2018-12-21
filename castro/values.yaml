@@ -1,0 +1,2 @@
+image: reg.qiniu.com/library/nginx:1.13.5-alpine
+message: "This is a demo app"
